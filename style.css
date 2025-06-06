@@ -1,0 +1,148 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #28a745; /* Verde vibrante para o cabeçalho */
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+h1, h2 {
+    color: #28a745; /* Cor verde para os títulos */
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Estilos para as seções de conteúdo */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Espaço entre texto e imagem */
+    flex-wrap: wrap; /* Permite que os itens se quebrem em telas menores */
+    justify-content: center; /* Centraliza itens quando se quebram */
+}
+
+.content-wrapper.reverse {
+    flex-direction: row-reverse; /* Inverte a ordem para a seção da cidade */
+}
+
+.text-content {
+    flex: 2; /* Ocupa mais espaço */
+    min-width: 300px; /* Garante que o texto tenha um tamanho mínimo */
+}
+
+.image-content {
+    flex: 1; /* Ocupa menos espaço */
+    text-align: center;
+    min-width: 250px; /* Garante que a imagem tenha um tamanho mínimo */
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Estilos específicos das seções */
+.intro p, .conclusion p {
+    font-size: 1.1em;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.countryside h2 {
+    color: #28a745; /* Cor verde para o campo */
+}
+
+.city h2 {
+    color: #007bff; /* Cor azul para a cidade */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Empilha o conteúdo em telas menores */
+    }
+
+    .content-wrapper.reverse {
+        flex-direction: column; /* Mantém empilhado para a seção da cidade também */
+    }
+}body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.campo {
+    color: #27ae60; /* Verde para o campo */
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.cidade {
+    color: #3498db; /* Azul para a cidade */
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
